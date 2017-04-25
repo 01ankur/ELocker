@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ae1df6</color>
+    <color name="colorPrimaryDark">#1431ea</color>
+    <color name="starNormalColor">#c4c4c4</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorMediumPurple">#8C53E5</color>
+    <color name="colorPurpleHeart">#5E2EAA</color>
+    <color name="gggggg">#eb7b8c</color>
+
+</resources>

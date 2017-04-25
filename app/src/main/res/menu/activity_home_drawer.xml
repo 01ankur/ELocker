@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_person"
+        android:title="ProfileInfo" />
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Scan"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Scan_Doc" />
+        <item
+            android:id="@+id/Set"
+            android:icon="@drawable/ic_settings"
+            android:title="Settings " />
+        <item
+            android:id="@+id/Feedback"
+            android:icon="@drawable/ic_feedback"
+            android:title="Feedback" />
+        <item
+            android:id="@+id/LogOut"
+            android:icon="@drawable/ic_logout"
+            android:title="Log Out" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/appinvite"
+                android:icon="@drawable/ic_menu_send"
+                android:title="App Invite" />
+            <item
+                android:id="@+id/about"
+                android:icon="@drawable/ic_about"
+                android:title="About" />
+        </menu>
+    </item>
+
+</menu>
