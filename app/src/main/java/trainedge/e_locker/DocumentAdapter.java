@@ -12,11 +12,11 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 
 public class DocumentAdapter extends RecyclerView.Adapter<DocumentHolder> {
-    ArrayList<Object> documentList;
+    ArrayList<ScanModel> documentList;
 
 
 
-    public DocumentAdapter(ArrayList<Object> documentList) {
+    public DocumentAdapter(ArrayList<ScanModel> documentList) {
         this.documentList = documentList;
     }
 

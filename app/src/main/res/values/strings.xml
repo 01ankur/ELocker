@@ -21,4 +21,99 @@
     <string name="invitation_title">Download my project</string>
     <string name="invitation_message">Download this project</string>
     <string name="invitation_cta">Play store link</string>
+    <!--<string name="techcrunch">Techcrunch</string>-->
+    <!--<string name="techradar">Techradar</string>-->
+    <!--<string name="cnet">Cnet</string>-->
+    <!--<string name="life">LifeHack</string>-->
+    <!--<string name="komodo">Komodo Media</string>-->
+    <!--<string name="win">Windows Reference</string>-->
+    <!--<string name="balu">BaluArt</string>-->
+
+    <!--<string name="fashionjobs">Fashion Jobs</string>-->
+    <!--<string name="fashionblogs">Fashion Blogs</string>-->
+    <!--<string name="fashionindustry">Fashion Industry</string>-->
+    <!--<string name="fashiongroups">Fashion Groups</string>-->
+    <!--<string name="fashionevents">Fashion Events</string>-->
+    <!--<string name="apparelsearch">Apparel Search</string>-->
+    <!--<string name="spoonfulofstyle">Spoonful of Style</string>-->
+    <!--<string name="fash365">Fashion365</string>-->
+
+    <!--<string name="bbcnewseducationandfamily">BBC News- Education and Family</string>-->
+    <!--<string name="bigideas">Big Ideas</string>-->
+    <!--<string name="bookbasset">Book Basset</string>-->
+    <!--<string name="brainpickings">Brain Pickings</string>-->
+    <!--<string name="creativityandinnovation"Creativity and Innovation</string>-->
+    <!--<string name="dolectures">Do Lectures</string>-->
+    <!--<string name="learnanythingnetwork">Learn Anything Network</string>-->
+    <!--<string name="schooltech">SchoolTech for Students</string>-->
+
+    <!--<string name="hertwocents"> Her Two Cents</string>-->
+    <!--<string name="calculatedrisk">Calculated Risk</string>-->
+    <!--<string name="nakedcapitalism">Naked Capitalism</string>-->
+    <!--<string name="theatlantic">The Atlantic - Business</string>-->
+    <!--<string name="entrepreneur">Entrepreneur</string>-->
+    <!--<string name="hbr">HBR.org</string>-->
+    <!--<string name="bw">BusinessWeek.com</string>-->
+    <!--<string name="cb">Capital Business</string>-->
+
+    <!--<string name="beautifulplace">Beautiful Place To Visit</string>-->
+    <!--<string name="cheapest">Cheapest Destinations</string>-->
+    <!--<string name="ibtimes">IBtimes.com</string>-->
+    <!--<string name="theflight">The Flight Deal</string>-->
+    <!--<string name="gadling">Gadling</string>-->
+
+    <!--<string name="cartoon">CartoonBrew</string>-->
+    <!--<string name="split">Splitsider</string>-->
+    <!--<string name="dilbert">Dilbert Daily Strip</string>-->
+    <!--<string name="daily">Daily Telagraph</string>-->
+    <!--<string name="flowing">Flowing Datat</string>-->
+    <!--<string name="panel">Panel Syndicate</string>-->
+
+    <!--<string name="cookbook">101 CookBooks</string>-->
+    <!--<string name="american">American Drink</string>-->
+    <!--<string name="gardening">Gardening</string>-->
+    <!--<string name="tastebook">TasteBook</string>-->
+    <!--<string name="recipes">Recipes and Menus</string>-->
+    <!--<string name="makeit">Make it Tonight</string>-->
+    <!--<string name="cake">CakeWrecks</string>-->
+
+    <!--<string name="abcnewsespn">ABC News: ESPN Sports</string>-->
+    <!--<string name="antaranews">ANTARA News: Sports</string>-->
+    <!--<string name="washington">The Washington Post</string>-->
+    <!--<string name="espn">ESPN.com</string>-->
+    <!--<string name="fark">Fark.com</string>-->
+    <!--<string name="forthewin">For The Win</string>-->
+    <!--<string name="nbcsports">NBCSports</string>-->
+
+    <!--<string name="gotta">Gottabemobile</string>-->
+    <!--<string name="tools">Tools and Toys</string>-->
+    <!--<string name="techpin">TechPin</string>-->
+    <!--<string name="slash">SlashGear</string>-->
+    <!--<string name="newl">Newlaunches</string>-->
+
+    <!--<string name="news3">3 News</string>-->
+    <!--<string name="five">Five ThirtyEight</string>-->
+    <!--<string name="rivva">Rivva</string>-->
+    <!--<string name="abc">ABC News</string>-->
+    <!--<string name="boing">BoingBoing</string>-->
+    <!--<string name="cbs">CBS News</string>-->
+    <!--<string name="bbcnews">BBC News</string>-->
+    <!--<string name="cbc">CBC </string>-->
+
+    <!--<string name="medindia">MedIndia Health</string>-->
+    <!--<string name="latestdiet">Latest Diet</string>-->
+    <!--<string name="latestdrug">Latest Drug</string>-->
+    <!--<string name="latestmental">Latest Mental Health</string>-->
+    <!--<string name="latestdiabetes">Latest Diabetes</string>-->
+    <!--<string name="latestwomen">Latest Women Health</string>-->
+    <!--<string name="latestmen">Latest Men Health</string>-->
+    <!--<string name="latestchild">Latest Child Health</string>-->
+
+    <!--<string name="thedaily">The Daily Dish</string>-->
+    <!--<string name="theatlanti">The Atlantic</string>-->
+    <!--<string name="liberal">Liberal Conspiracy</string>-->
+    <!--<string name="weekly">Weekly Sift</string>-->
+    <!--<string name="newstates">Polling: Political Polls</string>-->
+    <!--<string name="snow">Snowblog</string>-->
+    <!--<string name="political">Political Wire</string>-->
 </resources>

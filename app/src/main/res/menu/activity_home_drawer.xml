@@ -12,10 +12,6 @@
             android:icon="@drawable/ic_menu_camera"
             android:title="Scan_Doc" />
         <item
-            android:id="@+id/Set"
-            android:icon="@drawable/ic_settings"
-            android:title="Settings " />
-        <item
             android:id="@+id/Feedback"
             android:icon="@drawable/ic_feedback"
             android:title="Feedback" />

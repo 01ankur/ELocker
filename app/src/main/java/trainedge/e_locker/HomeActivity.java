@@ -6,6 +6,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.SearchView;
 import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -28,6 +29,12 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+
+/**
+ * Created by hp-pc on 5/12/2017.
+ */
 
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -36,16 +43,20 @@ public class HomeActivity extends AppCompatActivity
     public static final String TAG = "home";
     private FirebaseDatabase db;
     private DatabaseReference myref;
-    private ArrayList<Object> documentList;
+    private ArrayList<ScanModel> documentList;
     private FirebaseAuth mAuth;
+    private ArrayList<ScanModel> searchList;
+    private SearchView search;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        search = (SearchView) findViewById(R.id.search);
         setSupportActionBar(toolbar);
 
+        searchList = new ArrayList<>();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -72,7 +83,37 @@ public class HomeActivity extends AppCompatActivity
         rvDescription.setLayoutManager(manager);
         //setup Listener
         //using anonymous class
+        loadDocumentData(rvDescription);
+        search.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                searchList.clear();
+                for (ScanModel scan : documentList) {
+                    if (query.toLowerCase().contains(scan.getName().toLowerCase())) {
+                        searchList.add(scan);
+                    }
+                }
+                rvDescription.setAdapter(new DocumentAdapter(searchList));
+                return true;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                return false;
+            }
+        });
+        search.setOnCloseListener(new SearchView.OnCloseListener() {
+            @Override
+            public boolean onClose() {
+                loadDocumentData(rvDescription);
+                return true;
+            }
+        });
+    }
+
+    private void loadDocumentData(final RecyclerView rvDescription) {
         myref.addValueEventListener(new ValueEventListener() {
+
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 //Data is in data Snapshot obj
@@ -99,7 +140,6 @@ public class HomeActivity extends AppCompatActivity
 
             }
         });
-
     }
 
     private void sendInvitation() {
@@ -168,7 +208,7 @@ public class HomeActivity extends AppCompatActivity
         if (id == R.id.Scan) {
             Intent i = new Intent(HomeActivity.this, Scan_Document.class);
             startActivity(i);
-        } else if (id == R.id.Set) {
+
 
         } else if (id == R.id.Feedback) {
             Intent feedback = new Intent(HomeActivity.this, Feedback.class);
